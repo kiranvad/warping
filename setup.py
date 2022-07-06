@@ -40,27 +40,29 @@ def parse_requirements_file(filename):
     with open(filename) as input_file:
         return input_file.read().splitlines()
 
-requirements = parse_requirements_file('requirements.txt')
-packages = ['warping']
-optional_dependencies = {}
 
-for requirement in requirements:
+if __name__ == '__main__':
+    requirements = parse_requirements_file('requirements.txt')
+    packages = ['warping']
+    optional_dependencies = {}
+
+    for requirement in requirements:
         packages.append(requirement)  
-
-setup(
-    cmdclass={'build_ext': build_ext},
-	ext_modules=extensions,
-    name='warping',
-    version='0.0.1',
-    packages=packages,
-    description='Warping Functions Computation using Dynamic Programming',
-    classifiers=[
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Scientific/Engineering',
-        'Topic :: Scientific/Engineering :: Mathematics',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.8',
-    ]
-)
+        
+    setup(
+        cmdclass={'build_ext': build_ext},
+    	ext_modules=extensions,
+        name='warping',
+        version='0.0.1',
+        packages=['warping'],
+        description='Warping Functions Computation using Dynamic Programming',
+        classifiers=[
+            'License :: OSI Approved :: BSD License',
+            'Operating System :: OS Independent',
+            'Programming Language :: Python',
+            'Topic :: Scientific/Engineering',
+            'Topic :: Scientific/Engineering :: Mathematics',
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.8',
+        ]
+    )
