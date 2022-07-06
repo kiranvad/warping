@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: warping
+Version: 0.0.1
+Summary: Warping Functions Computation using Dynamic Programming
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
