@@ -21,3 +21,13 @@ conda activate warping
 ```
 pip install -e .
 ```
+
+Alternatively, to install it as a package in an existing environment, you can do the following:
+
+1. Install required pacakages using the following:
+
+```
+pip install -r requirements.txt
+```
+
+2. Then proceed to install the warping package same as step 3 above.
