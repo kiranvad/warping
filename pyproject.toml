@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warping"
+version = "1.0.0"
+description = "Warping Functions Computation using Dynamic Programming"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "Cython",
+]
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent", 
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["warping*"]
